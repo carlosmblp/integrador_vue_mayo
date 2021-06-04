@@ -39,8 +39,8 @@ export default {
   data() {
     return {
       items: [
-        { title: "Ejericicio 1", icon: "mdi-help-box", route: "/ejercicio1" },
-        { title: "Ejericicio 2", icon: "mdi-help-box", route: "/ejercicio2" },
+        { title: "Ejericicio 1", icon: "mdi-api", route: "/ejercicio1" },
+        { title: "Ejericicio 2", icon: "mdi-book-open", route: "/ejercicio2" },
        
       ],
       right: null,

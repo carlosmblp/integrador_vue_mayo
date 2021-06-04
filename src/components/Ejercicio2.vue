@@ -14,7 +14,15 @@
     <br>
     
     <p>El texto es => <b><input v-model="texto" /></b></p>
+    <br>
     <v-divider></v-divider>
+    <br>
+    <h4>El contenido del localStorage es:</h4>
+    <br>
+    <div v-for="(ls,v) in localStorage" v-bind:key="ls.texto">
+        <b>{{v}}</b>: {{ls}}
+    </div>
+    
     <br>
     <p>Si vamos a la herramienta desarrollador - Application => LocalStorage</p>
     <p>Veremos la variable "texto" con el texto ingresado en el input</p>
@@ -26,7 +34,7 @@
 export default {
   data: () => ({
     texto: null,
-    
+    localStorage: localStorage
   }),
   methods: {},
   mounted() {
